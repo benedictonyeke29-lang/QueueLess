@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Queue - QueueLess</title>
+</head>
+
+<body>
+
+    <h1>QueueLess</h1>
+
+    <h2>Benny's Barbershop</h2>
+
+    <h3>Current Queue</h3>
+
+    {% for customer in customers %}
+
+        <p>
+            #{{ customer["queue_number"] }} — {{ customer["name"] }}
+        </p>
+
+    {% endfor %}
+
+    <br>
+
+    <a href="/shops">Back to Shops</a>
+
+</body>
+</html>
